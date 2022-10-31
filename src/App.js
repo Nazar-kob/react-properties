@@ -7,7 +7,8 @@ import './App.css';
 
 // const textBtns = ["Hi click me", "Press me", "why not press me", "Hit me or I hit you", "Please change count!"]
 // import Persons from "./components/Persons";
-import Login from "./components/Login";
+// import Login from "./components/Login";
+import Wrapper from "./components/Wrapper";
 
 
 function App() {
@@ -26,7 +27,10 @@ function App() {
 
   return (
     <div className="App">
-      <Login />
+      <Wrapper someProps="someProps">
+        <h1 text="text from props children">Hello inside </h1>
+        <button>Click me!</button>
+      </Wrapper>
     </div>
   );
 }
