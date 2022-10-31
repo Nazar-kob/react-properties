@@ -8,7 +8,8 @@ import './App.css';
 // const textBtns = ["Hi click me", "Press me", "why not press me", "Hit me or I hit you", "Please change count!"]
 // import Persons from "./components/Persons";
 // import Login from "./components/Login";
-import Wrapper from "./components/Wrapper";
+// import Wrapper from "./components/Wrapper";
+import Todo from "./components/Todo";
 
 
 function App() {
@@ -27,10 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <Wrapper someProps="someProps">
-        <h1 text="text from props children">Hello inside </h1>
-        <button>Click me!</button>
-      </Wrapper>
+      <Todo />
     </div>
   );
 }
