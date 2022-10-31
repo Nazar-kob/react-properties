@@ -11,6 +11,10 @@ const Login = () => {
     event.preventDefault();
     setUserInput({ username: "", password: "" });
   }
+
+  const handelInputUser = (e, name) => {
+    setUserInput({ ...userInput, [name]: e.target.value });
+  };
   return (
     <>
       <h1>Login form</h1>
@@ -20,9 +24,7 @@ const Login = () => {
           <input
             type="text"
             value={userInput.username}
-            onChange={(e) => {
-              setUserInput({ ...userInput, username: e.target.value });
-            }}
+            onChange={(e) => handelInputUser(e, "username")}
           />
         </label>
 
@@ -31,9 +33,7 @@ const Login = () => {
           <input
             type="password"
             value={userInput.password}
-            onChange={(e) => {
-              setUserInput({ ...userInput, password: e.target.value });
-            }}
+            onChange={(e) => handelInputUser(e, "password")}
           />
         </label>
         <button type="submit">Submit</button>
