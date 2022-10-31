@@ -12,7 +12,7 @@ const Login = () => {
   }
   console.log(handelFormSubmit);
   return (
-    <div>
+    <>
       <h1>Login form</h1>
       <form onSubmit={handelFormSubmit} action="#">
         <label>
@@ -26,7 +26,7 @@ const Login = () => {
         </label>
         <button type="submit">Submit</button>
       </form>
-    </div>
+    </>
   );
 };
 
