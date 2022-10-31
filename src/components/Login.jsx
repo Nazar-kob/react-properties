@@ -3,17 +3,13 @@ import React, { useState } from "react";
 const Login = () => {
   console.log("render");
 
-  const [username, setUsetname] = useState("");
-  const [password, setPassword] = useState("");
+  //   const [username, setUsetname] = useState("");
+  //   const [password, setPassword] = useState("");
 
+  const [userInput, setUserInput] = useState({ username: "", password: "" });
   function handelFormSubmit(event) {
     event.preventDefault();
-    const user = {
-      username: username,
-      password: password,
-    };
-    setUsetname("");
-    setPassword("");
+    setUserInput({ username: "", password: "" });
   }
   return (
     <>
@@ -23,9 +19,9 @@ const Login = () => {
           User name
           <input
             type="text"
-            value={username}
+            value={userInput.username}
             onChange={(e) => {
-              setUsetname(e.target.value);
+              setUserInput({ ...userInput, username: e.target.value });
             }}
           />
         </label>
@@ -34,8 +30,10 @@ const Login = () => {
           User password
           <input
             type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            value={userInput.password}
+            onChange={(e) => {
+              setUserInput({ ...userInput, password: e.target.value });
+            }}
           />
         </label>
         <button type="submit">Submit</button>
