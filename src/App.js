@@ -9,7 +9,8 @@ import './App.css';
 // import Persons from "./components/Persons";
 // import Login from "./components/Login";
 // import Wrapper from "./components/Wrapper";
-import Todo from "./components/Todo";
+// import Todo from "./components/Todo";
+import Posts from "./components/Posts";
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <Todo />
+      <Posts />
     </div>
   );
 }
