@@ -7,11 +7,25 @@ h1 {
   font-size: 90px;
 }
 
-button {
+.persons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.person {
+  width: 250px;
   padding: 15px;
-  font-size: 30px;
   border-radius: 5px;
   border: 0;
-  margin: 20px;
+  margin: 10px;
   cursor: pointer;
+  background-color: rebeccapurple;
+}
+
+.person>img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
 }
