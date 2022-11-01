@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Post from "./Post";
+import Post from "./Post/Post";
 import Spinner from "./Spinner/Spinner";
 
 const API_URL = "https://jsonplaceholder.typicode.com/posts";
