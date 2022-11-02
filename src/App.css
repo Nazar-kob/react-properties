@@ -7,6 +7,22 @@ h1 {
   font-size: 40px;
 }
 
+nav {
+  background-color: blueviolet;
+  padding: 5px;
+}
+
+nav a {
+  margin: 15px;
+  font-size: 20px;
+  color: wheat;
+}
+
+.active {
+  color: red;
+  text-decoration: none;
+}
+
 .persons {
   display: flex;
   flex-wrap: wrap;

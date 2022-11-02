@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Spinner from "./Spinner/Spinner";
 
 const Todo = () => {
   const [data, setData] = useState(null);
@@ -13,7 +14,18 @@ const Todo = () => {
       .then((json) => setData(json));
   }, []);
 
-  return <div></div>;
+  return (
+    <>
+      {data ? (
+        <>
+          <h3>{data.id}</h3>
+          <h3>{data.title}</h3>
+        </>
+      ) : (
+        <Spinner />
+      )}
+    </>
+  );
 };
 
 export default Todo;
