@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
 const Login = () => {
-  console.log("render");
-
   //   const [username, setUsetname] = useState("");
   //   const [password, setPassword] = useState("");
 

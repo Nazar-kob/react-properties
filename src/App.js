@@ -13,6 +13,8 @@ import Login from "./components/Login";
 import Todo from "./components/Todo";
 import Posts from "./components/Posts";
 import MainLayout from "./components/MainLayout";
+import Courses from "./components/Courses";
+import SingeCourse from "./components/SingeCourse";
 
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
             <Route path="posts" element={<Posts />} />
             <Route path="persons" element={<Persons />} />
             <Route path="login" element={<Login />} />
+            <Route path="courses" element={<Courses />} />
+            <Route path="courses/:slugLink" element={<SingeCourse />} />
             <Route path="note" element={<Note petName='dog' age={15} havePet />} />
             <Route path="todo" element={<Todo />} />
             <Route path="random-number" element={<RandomNumber maxNumber={100} />} />

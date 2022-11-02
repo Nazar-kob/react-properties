@@ -26,6 +26,7 @@ const Menu = () => {
         <NavLink to="." end>
           home
         </NavLink>
+        <NavLink to="courses">courses</NavLink>
       </nav>
     </>
   );
