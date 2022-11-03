@@ -15,6 +15,7 @@ import Posts from "./components/Posts";
 import MainLayout from "./components/MainLayout";
 import Courses from "./components/Courses";
 import SingeCourse from "./components/SingeCourse";
+import Amount from "./components/Amount";
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<MainLayout />} >
-            <Route index element={<h1>Home page</h1>} />
+            <Route index element={<Amount />} />
             <Route path="posts" element={<Posts />} />
             <Route path="persons" element={<Persons />} />
             <Route path="login" element={<Login />} />
